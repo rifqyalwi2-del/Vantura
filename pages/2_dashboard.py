@@ -310,10 +310,10 @@ with pc:
                  f"Skenario: <span style='color:#C9A84C;'>{profile.scenario_key.upper()}</span>"
                  f" · Area emas = rentang hasil 1.000 simulasi pasar</span>",
             font=dict(family="Cormorant Garamond", size=18, color="#F0EDE8"),
-            x=0.02, xanchor="left", pad=dict(l=0, t=10)),
-        xaxis=dict(title="Usia (tahun)",titlefont=dict(size=10,color="#5A5768"),
+            x=0.02, xanchor="left"),
+        xaxis=dict(title=dict(text="Usia (tahun)",font=dict(size=10,color="#5A5768")),
                    gridcolor="rgba(255,255,255,.04)",zeroline=False,tickfont=dict(size=9)),
-        yaxis=dict(title="Kekayaan (Rp)",titlefont=dict(size=10,color="#5A5768"),
+        yaxis=dict(title=dict(text="Kekayaan (Rp)",font=dict(size=10,color="#5A5768")),
                    gridcolor="rgba(255,255,255,.04)",
                    zeroline=True,zerolinecolor="rgba(255,71,87,.3)",zerolinewidth=1,
                    tickfont=dict(size=9),tickformat=",.0f"),
