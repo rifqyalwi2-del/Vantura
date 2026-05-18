@@ -215,6 +215,10 @@ MIT License — bebas digunakan dan dimodifikasi dengan mencantumkan kredit.
 
 ---
 
+## 💻 Link
+
+https://vantura-4qfqcgfhuvtzmqinahistz.streamlit.app/
+
 <div align="center">
   <b>VANTURA</b> · Wealth Intelligence v2.0 · Built with Streamlit & ❤️
 </div>
