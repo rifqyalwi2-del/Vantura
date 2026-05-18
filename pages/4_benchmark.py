@@ -52,6 +52,7 @@ label,[data-baseweb="label"]{color:var(--ts)!important;font-size:.78rem!importan
     border:1px solid var(--bdrs)!important;}
 ::-webkit-scrollbar{width:5px;height:5px;}::-webkit-scrollbar-track{background:var(--bg2);}
 ::-webkit-scrollbar-thumb{background:var(--bdr);border-radius:3px;}
+[data-testid="stSidebarNav"],[data-testid="stSidebarNavItems"],[data-testid="stSidebarNavSeparator"],[data-testid="collapsedControl"]{display:none!important;}
 </style>""", unsafe_allow_html=True)
 
 def rp(v):
@@ -236,10 +237,7 @@ with cl:
             font=dict(family="Cormorant Garamond",size=16,color="#F0EDE8"),
             x=0.02, xanchor="left"),
         xaxis=dict(tickfont=dict(size=10,color="#9B97A0"),gridcolor="rgba(0,0,0,0)"),
-        yaxis=dict(tickformat=",.0s",tickfont=dict(size=9),gridcolor="rgba(255,255,255,.04)"),
-        shapes=[dict(type="rect",xref="paper",yref="paper",x0=0,y0=0,x1=1,y1=1,
-                     line=dict(color="rgba(255,255,255,.06)",width=1),
-                     fillcolor="rgba(0,0,0,0)",layer="below")])
+        yaxis=dict(tickformat=",.0s",tickfont=dict(size=9),gridcolor="rgba(255,255,255,.04)"))
     st.plotly_chart(fig_bar, use_container_width=True, config={"displayModeBar":False})
 
 with cr:
@@ -269,10 +267,7 @@ with cr:
         title=dict(text="Posisi Persentil<br><span style='font-size:9px;color:#5A5768;'>"
                         "Gauge vs kelompok usia Anda</span>",
                    font=dict(family="Cormorant Garamond",size=16,color="#F0EDE8"),
-                   x=0.02, xanchor="left"),
-        shapes=[dict(type="rect",xref="paper",yref="paper",x0=0,y0=0,x1=1,y1=1,
-                     line=dict(color="rgba(255,255,255,.06)",width=1),
-                     fillcolor="rgba(0,0,0,0)",layer="below")])
+                   x=0.02, xanchor="left"))
     st.plotly_chart(fig_g, use_container_width=True, config={"displayModeBar":False})
 
     diff_val = user_wealth-thresholds[1]
@@ -325,10 +320,7 @@ fig_multi.update_layout(height=340,
                gridcolor="rgba(255,255,255,.04)",zeroline=False,tickfont=dict(size=9)),
     yaxis=dict(title="Kekayaan (Rp)",titlefont=dict(size=10,color="#5A5768"),
                gridcolor="rgba(255,255,255,.04)",tickfont=dict(size=9),tickformat=",.0s"),
-    legend=dict(orientation="h",y=-0.16,font=dict(size=10,color="#9B97A0"),bgcolor="rgba(0,0,0,0)"),
-    shapes=[dict(type="rect",xref="paper",yref="paper",x0=0,y0=0,x1=1,y1=1,
-                 line=dict(color="rgba(255,255,255,.06)",width=1),
-                 fillcolor="rgba(0,0,0,0)",layer="below")])
+    legend=dict(orientation="h",y=-0.16,font=dict(size=10,color="#9B97A0"),bgcolor="rgba(0,0,0,0)"))
 st.plotly_chart(fig_multi, use_container_width=True, config={"displayModeBar":False})
 
 st.markdown("<div style='height:1rem'></div>", unsafe_allow_html=True)
@@ -461,10 +453,7 @@ fig_wf.update_layout(height=340, showlegend=False,
         font=dict(family="Cormorant Garamond",size=16,color="#F0EDE8"),
         x=0.02, xanchor="left"),
     xaxis=dict(tickfont=dict(size=10,color="#9B97A0")),
-    yaxis=dict(tickformat=",.0s",tickfont=dict(size=9),gridcolor="rgba(255,255,255,.04)"),
-    shapes=[dict(type="rect",xref="paper",yref="paper",x0=0,y0=0,x1=1,y1=1,
-                 line=dict(color="rgba(255,255,255,.06)",width=1),
-                 fillcolor="rgba(0,0,0,0)",layer="below")])
+    yaxis=dict(tickformat=",.0s",tickfont=dict(size=9),gridcolor="rgba(255,255,255,.04)"))
 st.plotly_chart(fig_wf, use_container_width=True, config={"displayModeBar":False})
 
 st.markdown(

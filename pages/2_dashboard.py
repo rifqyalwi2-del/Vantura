@@ -56,6 +56,7 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif!important;color:var(--tp)!import
     border-radius:10px!important;padding:1rem 1.2rem!important;}
 ::-webkit-scrollbar{width:5px;}::-webkit-scrollbar-track{background:var(--bg2);}
 ::-webkit-scrollbar-thumb{background:var(--bdr);border-radius:3px;}
+[data-testid="stSidebarNav"],[data-testid="stSidebarNavItems"],[data-testid="stSidebarNavSeparator"],[data-testid="collapsedControl"]{display:none!important;}
 </style>""", unsafe_allow_html=True)
 
 live = fetch_all_live_data()
@@ -317,10 +318,7 @@ with pc:
                    zeroline=True,zerolinecolor="rgba(255,71,87,.3)",zerolinewidth=1,
                    tickfont=dict(size=9),tickformat=",.0f"),
         legend=dict(orientation="h",y=-0.10,font=dict(size=10,color="#9B97A0"),
-                    bgcolor="rgba(0,0,0,0)"),
-        shapes=[dict(type="rect",xref="paper",yref="paper",x0=0,y0=0,x1=1,y1=1,
-                     line=dict(color="rgba(255,255,255,.06)",width=1),
-                     fillcolor="rgba(0,0,0,0)",layer="below")])
+                    bgcolor="rgba(0,0,0,0)"))
     st.plotly_chart(fig_l, use_container_width=True, config={"displayModeBar":False})
 
 # ── Bottom row metrics ─────────────────────────────────────────────────────────

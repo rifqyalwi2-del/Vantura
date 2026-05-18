@@ -164,7 +164,7 @@ with card:
                                      placeholder="Password Anda", key="login_pw")
             st.markdown("<div style='height:.5rem'></div>", unsafe_allow_html=True)
 
-            if st.button("Masuk  →", key="btn_login"):
+            if st.button("Masuk  →", key="btn_login", use_container_width=True):
                 if not email_in or not pw_in:
                     st.error("Email dan password wajib diisi.")
                 else:
@@ -198,7 +198,7 @@ with card:
                                       placeholder="Ulangi password", key="reg_pw2")
             st.markdown("<div style='height:.5rem'></div>", unsafe_allow_html=True)
 
-            if st.button("Buat Akun  →", key="btn_register"):
+            if st.button("Buat Akun  →", key="btn_register", use_container_width=True):
                 if not all([reg_name, reg_email, reg_pw, reg_pw2]):
                     st.error("Semua field wajib diisi.")
                 elif reg_pw != reg_pw2:

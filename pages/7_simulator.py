@@ -47,6 +47,7 @@ div[data-testid="stCheckbox"] label{text-transform:none!important;
     letter-spacing:normal!important;font-size:.88rem!important;}
 ::-webkit-scrollbar{width:5px;}::-webkit-scrollbar-track{background:var(--bg2);}
 ::-webkit-scrollbar-thumb{background:var(--bdr);border-radius:3px;}
+[data-testid="stSidebarNav"],[data-testid="stSidebarNavItems"],[data-testid="stSidebarNavSeparator"],[data-testid="collapsedControl"]{display:none!important;}
 </style>""", unsafe_allow_html=True)
 
 live = fetch_all_live_data()
@@ -254,9 +255,7 @@ if st.session_state.get("sim_done") and "sim_profile" in st.session_state:
                        tickfont=dict(size=9),tickformat=",.0f"),
             legend=dict(orientation="h",y=-0.10,font=dict(size=10,color="#9B97A0"),
                         bgcolor="rgba(0,0,0,0)"),
-            shapes=[dict(type="rect",xref="paper",yref="paper",x0=0,y0=0,x1=1,y1=1,
-                         line=dict(color="rgba(255,255,255,.06)",width=1),
-                         fillcolor="rgba(0,0,0,0)",layer="below")])
+)
         st.plotly_chart(fig, use_container_width=True, config={"displayModeBar":False})
 
         st.markdown("<div style='height:1rem'></div>", unsafe_allow_html=True)
