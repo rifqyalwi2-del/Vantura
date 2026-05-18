@@ -1,0 +1,23 @@
+[global]
+developmentMode = false
+
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+maxUploadSize = 10
+
+[browser]
+gatherUsageStats = false
+
+[client]
+showErrorDetails = false
+toolbarMode = "minimal"
+
+[theme]
+base = "dark"
+backgroundColor = "#0A0D14"
+secondaryBackgroundColor = "#111520"
+primaryColor = "#C9A84C"
+textColor = "#F0EDE8"
+font = "sans serif"
