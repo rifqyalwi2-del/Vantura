@@ -3,7 +3,6 @@
 > **Kalkulator aktuaria pensiun personal berbasis data ekonomi Indonesia real-time.**  
 > Proyeksi kekayaan · Monte Carlo · Peer Benchmarking · Stress Test · Laporan PDF
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vantura-4qfqcgfhuvtzmqinahistz.streamlit.app)
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.35+-red)
 ![Supabase](https://img.shields.io/badge/Database-Supabase-green)
